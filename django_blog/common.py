@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-ftw%kh8d0o5+^7wh^v+!&$$%7zo219$t%6)!wu8and2*tmeh56
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost ', '.39.104.92.113']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost ', '.8.130.31.211']
 
 
 # Application definition
@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'django_blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
     }
 }
 
@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'zh-hans'
 
-TIME_ZONE = 'Asia/shanghai'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
